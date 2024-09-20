@@ -1,0 +1,4 @@
+node_modules/
+# 用于让git无视上方文件，因为node_modules一般很大
+# for any files within git local repository, if it's not neither meant to
+# be tracked by git nor upload to github, just simply put in .gitignore
