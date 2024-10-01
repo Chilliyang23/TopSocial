@@ -1,0 +1,28 @@
+.profile-photo {
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--color-gray);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-photo img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    /* 'transform' property is a shorthand that applies to several types of transformations, 
+    such as translate, rotate, scale, and skew. 
+    So, when you specify transition: transform 0.6s ease;, you're telling the browser 
+    to animate any kind of transformation applied to the element (whether it's rotation, scaling, etc.). */
+}
+
+.profile-photo img:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}

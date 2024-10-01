@@ -1,0 +1,23 @@
+.btn {
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--btn-border-radius);
+    padding: var(--btn-padding);
+    cursor: pointer;
+    /* color transition added for future reference, currently has no impact */
+    /* Only opacity transition have effect */
+    transition: background-color 0.7s ease, color 0.7s ease, opacity 0.7s ease;
+}
+
+/* The reason to isolate color configuration is that there are multiple buttons on the
+page but have different background colors.
+By addressing them with different 'class name', color can be applied accordingly. */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color--white);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

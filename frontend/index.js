@@ -1,0 +1,1 @@
+import './index.css'  //import css, instead of import css inside of html
